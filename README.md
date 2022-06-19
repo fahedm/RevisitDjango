@@ -67,9 +67,11 @@ We need to create a view which will return HttpResponse to the client.
 * Create a method in views.py, this method should return whatever you want to show on the client side
 
 >from django.http import HttpResponse
+>
 >from django.shortcuts import render
 
 > def index(request):
+>
 >    return HttpResponse("Revisit Django: App1")
 
 * In urls.py, mention url of this view. project will understand from here.
